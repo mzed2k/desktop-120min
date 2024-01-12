@@ -3,13 +3,9 @@
 The :computer: Nextcloud Desktop Client is a tool to synchronize files from Nextcloud Server
 with your computer.
 
-## 📥 Download Binaries
+## Purpose of this fork
 
-### https://github.com/nextcloud-releases/desktop/releases
-
-<p align="center">
-    <img src="doc/images/main_dialog_christine.png" alt="Desktop Client on Windows" width="450">
-</p>
+Test upload job timeout of 120 mins instead of 30 mins
 
 ## :blue_heart: :tada: Contributing
 
@@ -48,18 +44,6 @@ $ cmake --build . --config Debug --target install
 
 :information_source: More detailed instructions can be found at the [Desktop Client Wiki](https://github.com/nextcloud/desktop/wiki).
 
-### :inbox_tray: Where to find binaries to download
-
-#### :high_brightness: Daily builds
-
-- Daily builds based on the latest master are available for Linux :penguin:, Mac, and Windows
-[in the desktop/daily folder of our download server](https://download.nextcloud.com/desktop/daily).
-For more info: [Wiki/Daily Builds](https://github.com/nextcloud/desktop/wiki/Daily-Builds).
-
-#### :rocket: Releases
-
-- Refer to the [download page https://nextcloud.com/install/#install-clients](https://nextcloud.com/install/#install-clients)
-
 ### :bomb: Reporting issues
 
 - If you find any bugs or have any suggestion for improvement, please
@@ -74,11 +58,6 @@ Request](https://github.com/nextcloud/desktop/pulls).
 - How to create a pull request? This guide will help you get started: [Opening a pull request](https://opensource.guide/how-to-contribute/#opening-a-pull-request) :heart:
 
 
-## :satellite: Contact us
-
-If you want to contact us, e.g. before starting a more complex feature, for questions :question:
-you can join us at
-[#nextcloud-client](https://webchat.freenode.net/?channels=nextcloud-client).
 
 ## :v: Code of conduct
 

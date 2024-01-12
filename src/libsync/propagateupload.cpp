@@ -724,8 +724,8 @@ void PropagateUploadFileCommon::adjustLastJobTimeout(AbstractNetworkJob *job, qi
         job->timeoutMsec(),
         // Calculate 3 minutes for each gigabyte of data
         qRound64(threeMinutes * fileSize / 1e9),
-        // Maximum of 30 minutes
-        static_cast<qint64>(30 * 60 * 1000)));
+        // Maximum of 120 minutes
+        static_cast<qint64>(120 * 60 * 1000)));
 }
 
 void PropagateUploadFileCommon::slotJobDestroyed(QObject *job)

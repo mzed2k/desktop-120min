@@ -84,6 +84,7 @@ static constexpr char logExpireC[] = "logExpire";
 static constexpr char logFlushC[] = "logFlush";
 static constexpr char showExperimentalOptionsC[] = "showExperimentalOptions";
 static constexpr char clientVersionC[] = "clientVersion";
+static constexpr char launchOnSystemStartupC[] = "launchOnSystemStartup";
 
 static constexpr char proxyHostC[] = "Proxy/host";
 static constexpr char proxyTypeC[] = "Proxy/type";
@@ -103,6 +104,8 @@ static constexpr char notifyExistingFoldersOverLimitC[] = "notifyExistingFolders
 static constexpr char stopSyncingExistingFoldersOverLimitC[] = "stopSyncingExistingFoldersOverLimit";
 static constexpr char confirmExternalStorageC[] = "confirmExternalStorage";
 static constexpr char moveToTrashC[] = "moveToTrash";
+
+static constexpr char forceLoginV2C[] = "forceLoginV2";
 
 static constexpr char certPath[] = "http_certificatePath";
 static constexpr char certPasswd[] = "http_certificatePasswd";
@@ -282,6 +285,8 @@ void ConfigFile::saveGeometry(QWidget *w)
     settings.beginGroup(w->objectName());
     settings.setValue(QLatin1String(geometryC), w->saveGeometry());
     settings.sync();
+#else
+    Q_UNUSED(w)
 #endif
 }
 
@@ -289,6 +294,8 @@ void ConfigFile::restoreGeometry(QWidget *w)
 {
 #ifndef TOKEN_AUTH_ONLY
     w->restoreGeometry(getValue(geometryC, w->objectName()).toByteArray());
+#else
+    Q_UNUSED(w)
 #endif
 }
 
@@ -303,6 +310,8 @@ void ConfigFile::saveGeometryHeader(QHeaderView *header)
     settings.beginGroup(header->objectName());
     settings.setValue(QLatin1String(geometryC), header->saveState());
     settings.sync();
+#else
+    Q_UNUSED(header)
 #endif
 }
 
@@ -316,6 +325,8 @@ void ConfigFile::restoreGeometryHeader(QHeaderView *header)
     QSettings settings(configFile(), QSettings::IniFormat);
     settings.beginGroup(header->objectName());
     header->restoreState(settings.value(geometryC).toByteArray());
+#else
+    Q_UNUSED(header)
 #endif
 }
 
@@ -991,6 +1002,16 @@ void ConfigFile::setMoveToTrash(bool isChecked)
     setValue(moveToTrashC, isChecked);
 }
 
+bool ConfigFile::forceLoginV2() const
+{
+    return getValue(forceLoginV2C, QString(), false).toBool();
+}
+
+void ConfigFile::setForceLoginV2(bool isChecked)
+{
+    setValue(forceLoginV2C, isChecked);
+}
+
 bool ConfigFile::showMainDialogAsNormalWindow() const {
     return getValue(showMainDialogAsNormalWindowC, {}, false).toBool();
 }
@@ -1138,6 +1159,18 @@ void ConfigFile::setClientVersionString(const QString &version)
 {
     QSettings settings(configFile(), QSettings::IniFormat);
     settings.setValue(QLatin1String(clientVersionC), version);
+}
+
+bool ConfigFile::launchOnSystemStartup() const
+{
+    QSettings settings(configFile(), QSettings::IniFormat);
+    return settings.value(QLatin1String(launchOnSystemStartupC), true).toBool();
+}
+
+void ConfigFile::setLaunchOnSystemStartup(const bool autostart)
+{
+    QSettings settings(configFile(), QSettings::IniFormat);
+    settings.setValue(QLatin1String(launchOnSystemStartupC), autostart);
 }
 
 Q_GLOBAL_STATIC(QString, g_configFileName)

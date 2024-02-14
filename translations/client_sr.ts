@@ -323,19 +323,6 @@
     </message>
 </context>
 <context>
-    <name>OCC::AbstractPropagateRemoteDeleteEncrypted</name>
-    <message>
-        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="139"/>
-        <source>Wrong HTTP code returned by server. Expected 204, but received &quot;%1 %2&quot;.</source>
-        <translation>Сервер је вратио погрешан HTTP кôд. Очекивао се 204, а примљен је „%1 %2”.</translation>
-    </message>
-    <message>
-        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="183"/>
-        <source>&quot;%1 Failed to unlock encrypted folder %2&quot;.</source>
-        <translation>„%1 Није успело откључавање шифрованог фолдера %2”.</translation>
-    </message>
-</context>
-<context>
     <name>OCC::Account</name>
     <message>
         <location filename="../src/libsync/account.cpp" line="939"/>
@@ -363,14 +350,14 @@ Should an account import be attempted?</source>
 Да ли да се покуша увоз налога?</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="195"/>
+        <location filename="../src/gui/accountmanager.cpp" line="198"/>
         <source>%1 accounts were detected from a legacy desktop client.
 Should the accounts be imported?</source>
         <translation>Откривено је %1 налога са десктоп клијента старе верзије.
 Да ли би требало да се увезу?</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="197"/>
+        <location filename="../src/gui/accountmanager.cpp" line="200"/>
         <source>1 account was detected from a legacy desktop client.
 Should the account be imported?</source>
         <translation>Откривен је 1 налог са десктоп клијента старе верзије.
@@ -384,12 +371,12 @@ Should the account be imported?</source>
         <translation>Увоз старе верзије</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="200"/>
+        <location filename="../src/gui/accountmanager.cpp" line="203"/>
         <source>Import</source>
         <translation>Увези</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="201"/>
+        <location filename="../src/gui/accountmanager.cpp" line="204"/>
         <source>Skip</source>
         <translation>Прескочи</translation>
     </message>
@@ -772,6 +759,11 @@ This action will abort any currently running synchronization.</source>
         <translation>Нема конекције на %1 са %2.</translation>
     </message>
     <message>
+        <location filename="../src/gui/accountsettings.cpp" line="1279"/>
+        <source>Unable to connect to %1.</source>
+        <translation>Није успело повезивање са %1.</translation>
+    </message>
+    <message>
         <location filename="../src/gui/accountsettings.cpp" line="1264"/>
         <source>Server configuration error: %1 at %2.</source>
         <translation>Грешка у конфигурацији сервера: %1 у %2.</translation>
@@ -797,7 +789,7 @@ This action will abort any currently running synchronization.</source>
         <translation>Ово су фасцикле које нису синхронизоване зато што су превелике или су на спољним складиштима:</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountsettings.cpp" line="1572"/>
+        <location filename="../src/gui/accountsettings.cpp" line="1573"/>
         <source>There are folders that have grown in size beyond %1MB: %2</source>
         <translation>Има фолдера чија је величина нарасла преко %1MB: %2</translation>
     </message>
@@ -994,34 +986,34 @@ This action will abort any currently running synchronization.</source>
         <translation>Настави</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="455"/>
+        <location filename="../src/gui/application.cpp" line="460"/>
         <source>%1 accounts</source>
         <comment>number of accounts imported</comment>
         <translation>%1 налога</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="456"/>
+        <location filename="../src/gui/application.cpp" line="461"/>
         <source>1 account</source>
         <translation>1 налог</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="458"/>
+        <location filename="../src/gui/application.cpp" line="463"/>
         <source>%1 folders</source>
         <comment>number of folders imported</comment>
         <translation>%1 фолдера</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="459"/>
+        <location filename="../src/gui/application.cpp" line="464"/>
         <source>1 folder</source>
         <translation>1 фолдер</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="461"/>
+        <location filename="../src/gui/application.cpp" line="466"/>
         <source>Legacy import</source>
         <translation>Увоз старе верзије</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="462"/>
+        <location filename="../src/gui/application.cpp" line="467"/>
         <source>Imported %1 and %2 from a legacy desktop client.
 %3</source>
         <comment>number of accounts and folders imported. list of users.</comment>
@@ -1065,6 +1057,19 @@ This action will abort any currently running synchronization.</source>
         <location filename="../src/gui/authenticationdialog.cpp" line="38"/>
         <source>&amp;Password:</source>
         <translation>&amp;Лозинка:</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::BasePropagateRemoteDeleteEncrypted</name>
+    <message>
+        <location filename="../src/libsync/basepropagateremotedeleteencrypted.cpp" line="94"/>
+        <source>&quot;%1 Failed to unlock encrypted folder %2&quot;.</source>
+        <translation>„%1 Није успело откључавање шифрованог фолдера %2”.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/basepropagateremotedeleteencrypted.cpp" line="136"/>
+        <source>Wrong HTTP code returned by server. Expected 204, but received &quot;%1 %2&quot;.</source>
+        <translation>Сервер је вратио погрешан HTTP кôд. Очекивао се 204, а примљен је „%1 %2”.</translation>
     </message>
 </context>
 <context>
@@ -1451,6 +1456,11 @@ This action will abort any currently running synchronization.</source>
         <source>Please update to the latest server and restart the client.</source>
         <translation>Ажурирајте сервер и поново покрените клијента.</translation>
     </message>
+    <message>
+        <location filename="../src/gui/connectionvalidator.cpp" line="343"/>
+        <source>Network Error</source>
+        <translation>Мрежна грешка</translation>
+    </message>
 </context>
 <context>
     <name>OCC::DiscoveryPhase</name>
@@ -1472,6 +1482,12 @@ This action will abort any currently running synchronization.</source>
         <location filename="../src/libsync/discoveryphase.cpp" line="610"/>
         <source>Server error: PROPFIND reply is not XML formatted!</source>
         <translation>Серверска грешка: PROPFIND одговор није XML форматиран!</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/discoveryphase.cpp" line="668"/>
+        <location filename="../src/libsync/discoveryphase.cpp" line="696"/>
+        <source>Encrypted metadata setup error!</source>
+        <translation>Грешка подешавања шифрованих метаподатака!</translation>
     </message>
 </context>
 <context>
@@ -1634,6 +1650,39 @@ This action will abort any currently running synchronization.</source>
 This can be an issue with your OpenSSL libraries.</source>
         <translation>Не могу да изгенеришем метаподатке за шифровање. Откључавам фасциклу.
 Ово може указати на проблем са Вашим OpenSSL библиотекама.</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::EncryptedFolderMetadataHandler</name>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="59"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="162"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="171"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="199"/>
+        <source>Error fetching metadata.</source>
+        <translation>Грешка приликом добављања метаподатака.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="114"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="120"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="213"/>
+        <source>Error locking folder.</source>
+        <translation>Грешка код закључавања фолдера.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="147"/>
+        <source>Error fetching encrypted folder ID.</source>
+        <translation>Грешка приликом добављања ID шифрованог фолдера.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="181"/>
+        <source>Error parsing or decrypting metadata.</source>
+        <translation>Грешка приликом парсирања или дешифровања метаподатака.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="323"/>
+        <source>Failed to upload metadata</source>
+        <translation>Није успело отпремање метаподатака</translation>
     </message>
 </context>
 <context>
@@ -1887,29 +1936,29 @@ This can be an issue with your OpenSSL libraries.</source>
         <translation>Идите у поставке и означите ако желите да ја преузмете.</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1366"/>
+        <location filename="../src/gui/folder.cpp" line="1369"/>
         <source>A folder has surpassed the set folder size limit of %1MB: %2.
 %3</source>
         <translation>Фолдер је прешао постављено ограничење величине од %1MB: %2.
 %3</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1377"/>
+        <location filename="../src/gui/folder.cpp" line="1380"/>
         <source>Keep syncing</source>
         <translation>Настави синхронизацију</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1385"/>
+        <location filename="../src/gui/folder.cpp" line="1388"/>
         <source>Stop syncing</source>
         <translation>Заустави синхронизацију</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1396"/>
+        <location filename="../src/gui/folder.cpp" line="1399"/>
         <source>The folder %1 has surpassed the set folder size limit of %2MB.</source>
         <translation>Фолдер %1 је прешао постављено ограничење величине од %2MB.</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1397"/>
+        <location filename="../src/gui/folder.cpp" line="1400"/>
         <source>Would you like to stop syncing this folder?</source>
         <translation>Желите ли да зауставите синхронизацију овог фолдера?</translation>
     </message>
@@ -1937,7 +1986,7 @@ This means that the synchronization client might not upload local changes immedi
 %1</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1518"/>
+        <location filename="../src/gui/folder.cpp" line="1521"/>
         <source>Virtual file download failed with code &quot;%1&quot;, status &quot;%2&quot; and error message &quot;%3&quot;</source>
         <translation>Није успело виртуелно преузимање фајла, кôд „%1”, статус „%2” и порука о грешки „%3~</translation>
     </message>
@@ -3460,7 +3509,7 @@ Note that using any logging command line options will override this setting.</so
     <message>
         <location filename="../src/gui/owncloudsetupwizard.cpp" line="490"/>
         <source>Could not create local folder %1</source>
-        <translation>Не могу да направим локалну фасциклу %1</translation>
+        <translation>Не може да се направи локални фолдер %1</translation>
     </message>
     <message>
         <location filename="../src/gui/owncloudsetupwizard.cpp" line="550"/>
@@ -4009,6 +4058,11 @@ This is a new, experimental mode. If you decide to use it, please report any iss
         <translation>Сервер је вратио погрешан HTTP кôд. Очекивао се 201, а примљен је „%1 %2”.</translation>
     </message>
     <message>
+        <location filename="../src/libsync/propagateremotemkdir.cpp" line="248"/>
+        <source>Failed to encrypt a folder %1</source>
+        <translation>Није успело шифровање фолдера %1</translation>
+    </message>
+    <message>
         <location filename="../src/libsync/propagateremotemkdir.cpp" line="260"/>
         <source>Error writing metadata to the database: %1</source>
         <translation>Грешка приликом уписа метаподатака у базу података: %1</translation>
@@ -4292,6 +4346,14 @@ This is a new, experimental mode. If you decide to use it, please report any iss
     </message>
 </context>
 <context>
+    <name>OCC::ShareManager</name>
+    <message>
+        <location filename="../src/gui/sharemanager.cpp" line="681"/>
+        <source>Error</source>
+        <translation>Грешка</translation>
+    </message>
+</context>
+<context>
     <name>OCC::ShareModel</name>
     <message>
         <location filename="../src/gui/filedetails/sharemodel.cpp" line="692"/>
@@ -4317,6 +4379,11 @@ This is a new, experimental mode. If you decide to use it, please report any iss
         <location filename="../src/gui/filedetails/sharemodel.cpp" line="704"/>
         <source>Secure file drop</source>
         <translation>Сигурно место за упуштање фајлова</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/filedetails/sharemodel.cpp" line="856"/>
+        <source>Could not find local folder for %1</source>
+        <translation>Не може да се пронађе локални фолдер за %1</translation>
     </message>
     <message>
         <location filename="../src/gui/filedetails/sharemodel.cpp" line="993"/>
@@ -4993,6 +5060,60 @@ Server replied with error: %2</source>
         <location filename="../src/gui/tray/unifiedsearchresultslistmodel.cpp" line="479"/>
         <source>Search has failed for &apos;%1&apos;. Error: %2</source>
         <translation>Није успела претрага ’%1’. Грешка: ’%2’</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::UpdateE2eeFolderMetadataJob</name>
+    <message>
+        <location filename="../src/libsync/updatee2eefoldermetadatajob.cpp" line="130"/>
+        <source>Failed to update folder metadata.</source>
+        <translation>Није успело отпремање метаподатака фолдера.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefoldermetadatajob.cpp" line="153"/>
+        <source>Failed to unlock encrypted folder.</source>
+        <translation>Није успело откључавање шифрованог фолдера.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefoldermetadatajob.cpp" line="163"/>
+        <source>Failed to finalize item.</source>
+        <translation>Није успело довршавање ставке.</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::UpdateE2eeFolderUsersMetadataJob</name>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="60"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="71"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="116"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="131"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="138"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="148"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="169"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="201"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="260"/>
+        <source>Error updating metadata for a folder %1</source>
+        <translation>Грешка приликом ажурирања метаподатака за фолдер %1</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="92"/>
+        <source>Could not fetch public key for user %1</source>
+        <translation>Није успело добављање јавног кључа за корисника %1</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="100"/>
+        <source>Could not find root encrypted folder for folder %1</source>
+        <translation>Није могао да се пронађе корени шифровани фолдер за фолдер %1</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="121"/>
+        <source>Could not add or remove a folder user %1, for folder %2</source>
+        <translation>Није могао да се дода корисник фолдера %1, за фолдер %2</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="238"/>
+        <source>Failed to unlock a folder.</source>
+        <translation>Није успело откључавање фолдера.</translation>
     </message>
 </context>
 <context>
@@ -5756,6 +5877,11 @@ Server replied with error: %2</source>
         <source>Search for users or groups…</source>
         <translation>Претражи кориснике или групе…</translation>
     </message>
+    <message>
+        <location filename="../src/gui/filedetails/ShareeSearchField.qml" line="48"/>
+        <source>Sharing is not available for this folder</source>
+        <translation>Овај фолдер не може да се дели</translation>
+    </message>
 </context>
 <context>
     <name>SyncJournalDb</name>
@@ -6003,6 +6129,16 @@ Server replied with error: %2</source>
 <context>
     <name>Utility</name>
     <message>
+        <location filename="../src/common/utility.cpp" line="147"/>
+        <source>%L1 B</source>
+        <translation>%L1 B</translation>
+    </message>
+    <message>
+        <location filename="../src/common/utility.cpp" line="116"/>
+        <source>%L1 TB</source>
+        <translation>%L1 TB</translation>
+    </message>
+    <message>
         <location filename="../src/common/utility.cpp" line="136"/>
         <source>%L1 GB</source>
         <translation>%L1 GB</translation>
@@ -6016,11 +6152,6 @@ Server replied with error: %2</source>
         <location filename="../src/common/utility.cpp" line="144"/>
         <source>%L1 KB</source>
         <translation>%L1 KB</translation>
-    </message>
-    <message>
-        <location filename="../src/common/utility.cpp" line="147"/>
-        <source>%L1 B</source>
-        <translation>%L1 B</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/common/utility.cpp" line="335"/>
@@ -6400,6 +6531,19 @@ Server replied with error: %2</source>
         <location filename="../src/gui/guiutility.cpp" line="105"/>
         <source>Free up local space</source>
         <translation>Ослободи локални простор</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::AbstractPropagateRemoteDeleteEncrypted</name>
+    <message>
+        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="139"/>
+        <source>Wrong HTTP code returned by server. Expected 204, but received &quot;%1 %2&quot;.</source>
+        <translation>Сервер је вратио погрешан HTTP кôд. Очекивао се 204, а примљен је „%1 %2”.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="183"/>
+        <source>&quot;%1 Failed to unlock encrypted folder %2&quot;.</source>
+        <translation>„%1 Није успело откључавање шифрованог фолдера %2”.</translation>
     </message>
 </context>
 <context>

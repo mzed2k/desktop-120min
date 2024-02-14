@@ -323,19 +323,6 @@
     </message>
 </context>
 <context>
-    <name>OCC::AbstractPropagateRemoteDeleteEncrypted</name>
-    <message>
-        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="139"/>
-        <source>Wrong HTTP code returned by server. Expected 204, but received &quot;%1 %2&quot;.</source>
-        <translation>Sunucudan alınan HTTP kodu yanlış. 204 bekleniyordu, ancak &quot;%1 %2&quot; alındı.</translation>
-    </message>
-    <message>
-        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="183"/>
-        <source>&quot;%1 Failed to unlock encrypted folder %2&quot;.</source>
-        <translation>&quot;%1, %2 şifrelenmiş klasörünün kilidini açamadı&quot;.</translation>
-    </message>
-</context>
-<context>
     <name>OCC::Account</name>
     <message>
         <location filename="../src/libsync/account.cpp" line="939"/>
@@ -363,14 +350,14 @@ Should an account import be attempted?</source>
 Hesabın içe aktarılması denensin mi?</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="195"/>
+        <location filename="../src/gui/accountmanager.cpp" line="198"/>
         <source>%1 accounts were detected from a legacy desktop client.
 Should the accounts be imported?</source>
         <translation>%1 hesap eski masaüstü istemcisini kullanıyor.
 Bu hesaplar içe aktarılsın mı?</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="197"/>
+        <location filename="../src/gui/accountmanager.cpp" line="200"/>
         <source>1 account was detected from a legacy desktop client.
 Should the account be imported?</source>
         <translation>1 hesap eski masaüstü istemcisini kullanıyor.
@@ -384,12 +371,12 @@ Bu hesap içe aktarılsın mı?</translation>
         <translation>Eski içe aktarma</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="200"/>
+        <location filename="../src/gui/accountmanager.cpp" line="203"/>
         <source>Import</source>
         <translation>İçe aktar</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="201"/>
+        <location filename="../src/gui/accountmanager.cpp" line="204"/>
         <source>Skip</source>
         <translation>Atla</translation>
     </message>
@@ -772,6 +759,11 @@ Bu işlem şu anda yürütülmekte olan eşitleme işlemlerini durdurur.</transl
         <translation>%1 ile %2 üzerinde bağlantı yok.</translation>
     </message>
     <message>
+        <location filename="../src/gui/accountsettings.cpp" line="1279"/>
+        <source>Unable to connect to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location filename="../src/gui/accountsettings.cpp" line="1264"/>
         <source>Server configuration error: %1 at %2.</source>
         <translation>Sunucu yapılandırma sorunu: %1 ile %2.</translation>
@@ -797,7 +789,7 @@ Bu işlem şu anda yürütülmekte olan eşitleme işlemlerini durdurur.</transl
         <translation>Çok büyük oldukları için ya da dış depolama alanında bulundukları için eşitlenmeyen klasörler var:</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountsettings.cpp" line="1572"/>
+        <location filename="../src/gui/accountsettings.cpp" line="1573"/>
         <source>There are folders that have grown in size beyond %1MB: %2</source>
         <translation>Boyutu %1MB değerini aşan klasörler var: %2</translation>
     </message>
@@ -994,34 +986,34 @@ Bu işlem şu anda yürütülmekte olan eşitleme işlemlerini durdurur.</transl
         <translation>Sürdür</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="455"/>
+        <location filename="../src/gui/application.cpp" line="460"/>
         <source>%1 accounts</source>
         <comment>number of accounts imported</comment>
         <translation>%1 hesap</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="456"/>
+        <location filename="../src/gui/application.cpp" line="461"/>
         <source>1 account</source>
         <translation>1 hesap</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="458"/>
+        <location filename="../src/gui/application.cpp" line="463"/>
         <source>%1 folders</source>
         <comment>number of folders imported</comment>
         <translation>%1 klasör</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="459"/>
+        <location filename="../src/gui/application.cpp" line="464"/>
         <source>1 folder</source>
         <translation>1 klasör</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="461"/>
+        <location filename="../src/gui/application.cpp" line="466"/>
         <source>Legacy import</source>
         <translation>Eskileri içe aktarma</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="462"/>
+        <location filename="../src/gui/application.cpp" line="467"/>
         <source>Imported %1 and %2 from a legacy desktop client.
 %3</source>
         <comment>number of accounts and folders imported. list of users.</comment>
@@ -1065,6 +1057,19 @@ Bu işlem şu anda yürütülmekte olan eşitleme işlemlerini durdurur.</transl
         <location filename="../src/gui/authenticationdialog.cpp" line="38"/>
         <source>&amp;Password:</source>
         <translation>&amp;Parola:</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::BasePropagateRemoteDeleteEncrypted</name>
+    <message>
+        <location filename="../src/libsync/basepropagateremotedeleteencrypted.cpp" line="94"/>
+        <source>&quot;%1 Failed to unlock encrypted folder %2&quot;.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/basepropagateremotedeleteencrypted.cpp" line="136"/>
+        <source>Wrong HTTP code returned by server. Expected 204, but received &quot;%1 %2&quot;.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1451,6 +1456,11 @@ Bu işlem şu anda yürütülmekte olan eşitleme işlemlerini durdurur.</transl
         <source>Please update to the latest server and restart the client.</source>
         <translation>Lütfen sunucuyu en son sürüme güncelleyin ve istemciyi yeniden başlatın.</translation>
     </message>
+    <message>
+        <location filename="../src/gui/connectionvalidator.cpp" line="343"/>
+        <source>Network Error</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>OCC::DiscoveryPhase</name>
@@ -1472,6 +1482,12 @@ Bu işlem şu anda yürütülmekte olan eşitleme işlemlerini durdurur.</transl
         <location filename="../src/libsync/discoveryphase.cpp" line="610"/>
         <source>Server error: PROPFIND reply is not XML formatted!</source>
         <translation>Sunucu hatası: PROPFIND yanıtı XML biçiminde değil!</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/discoveryphase.cpp" line="668"/>
+        <location filename="../src/libsync/discoveryphase.cpp" line="696"/>
+        <source>Encrypted metadata setup error!</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1634,6 +1650,39 @@ Bu işlem şu anda yürütülmekte olan eşitleme işlemlerini durdurur.</transl
 This can be an issue with your OpenSSL libraries.</source>
         <translation>Şifreleme için üst veri oluşturulamadı. Klasörün kilidi açılıyor.
 Bu durum OpenSLL kitaplıkları ile ilgili bir sorun olabilir.</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::EncryptedFolderMetadataHandler</name>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="59"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="162"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="171"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="199"/>
+        <source>Error fetching metadata.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="114"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="120"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="213"/>
+        <source>Error locking folder.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="147"/>
+        <source>Error fetching encrypted folder ID.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="181"/>
+        <source>Error parsing or decrypting metadata.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="323"/>
+        <source>Failed to upload metadata</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1887,29 +1936,29 @@ Bu durum OpenSLL kitaplıkları ile ilgili bir sorun olabilir.</translation>
         <translation>İndirmek istiyorsanız seçmek için lütfen ayarlar bölümüne gidin.</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1366"/>
+        <location filename="../src/gui/folder.cpp" line="1369"/>
         <source>A folder has surpassed the set folder size limit of %1MB: %2.
 %3</source>
         <translation>Bir klasörün boyutu %1MB olan klasör boyutu sınırını aştı : %2.
 %3</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1377"/>
+        <location filename="../src/gui/folder.cpp" line="1380"/>
         <source>Keep syncing</source>
         <translation>Eşitlemeyi sürdür</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1385"/>
+        <location filename="../src/gui/folder.cpp" line="1388"/>
         <source>Stop syncing</source>
         <translation>Eşitlemeyi durdur</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1396"/>
+        <location filename="../src/gui/folder.cpp" line="1399"/>
         <source>The folder %1 has surpassed the set folder size limit of %2MB.</source>
         <translation>%1 klasörünün boyutu %2MB olan klasör boyutu sınırını aştı.</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1397"/>
+        <location filename="../src/gui/folder.cpp" line="1400"/>
         <source>Would you like to stop syncing this folder?</source>
         <translation>Bu klasörün eşitlenmesini durdurmak ister misiniz?</translation>
     </message>
@@ -1935,7 +1984,7 @@ This means that the synchronization client might not upload local changes immedi
 Bunun sonucunda eşitleme istemcisi yerel değişiklikleri anında yükleyemez. Onun yerine yalnızca yerel değişiklikleri tarar ve aralıklarla yükler (varsayılan olarak iki saatte bir).</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1518"/>
+        <location filename="../src/gui/folder.cpp" line="1521"/>
         <source>Virtual file download failed with code &quot;%1&quot;, status &quot;%2&quot; and error message &quot;%3&quot;</source>
         <translation>Sanal dosya indirilemedi. Kod: &quot;%1&quot; Durum: &quot;%2&quot; Hata iletisi: &quot;%3&quot;</translation>
     </message>
@@ -4008,6 +4057,11 @@ Bu yeni ve deneysel bir özelliktir. Kullanmaya karar verirseniz, lütfen karş�
         <translation>Sunucudan alınan HTTP kodu yanlış. 201 bekleniyordu, ancak &quot;%1 %2&quot; alındı.</translation>
     </message>
     <message>
+        <location filename="../src/libsync/propagateremotemkdir.cpp" line="248"/>
+        <source>Failed to encrypt a folder %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location filename="../src/libsync/propagateremotemkdir.cpp" line="260"/>
         <source>Error writing metadata to the database: %1</source>
         <translation>Üst veriler veri tabanına yazılırken sorun çıktı: %1</translation>
@@ -4291,6 +4345,14 @@ Bu yeni ve deneysel bir özelliktir. Kullanmaya karar verirseniz, lütfen karş�
     </message>
 </context>
 <context>
+    <name>OCC::ShareManager</name>
+    <message>
+        <location filename="../src/gui/sharemanager.cpp" line="681"/>
+        <source>Error</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
     <name>OCC::ShareModel</name>
     <message>
         <location filename="../src/gui/filedetails/sharemodel.cpp" line="692"/>
@@ -4316,6 +4378,11 @@ Bu yeni ve deneysel bir özelliktir. Kullanmaya karar verirseniz, lütfen karş�
         <location filename="../src/gui/filedetails/sharemodel.cpp" line="704"/>
         <source>Secure file drop</source>
         <translation>Güvenli dosya bırakma</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/filedetails/sharemodel.cpp" line="856"/>
+        <source>Could not find local folder for %1</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../src/gui/filedetails/sharemodel.cpp" line="993"/>
@@ -4992,6 +5059,60 @@ Sunucunun verdiği hata yanıtı: %2</translation>
         <location filename="../src/gui/tray/unifiedsearchresultslistmodel.cpp" line="479"/>
         <source>Search has failed for &apos;%1&apos;. Error: %2</source>
         <translation>&apos;%1&apos; için arama yapılamadı. Hata: %2</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::UpdateE2eeFolderMetadataJob</name>
+    <message>
+        <location filename="../src/libsync/updatee2eefoldermetadatajob.cpp" line="130"/>
+        <source>Failed to update folder metadata.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefoldermetadatajob.cpp" line="153"/>
+        <source>Failed to unlock encrypted folder.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefoldermetadatajob.cpp" line="163"/>
+        <source>Failed to finalize item.</source>
+        <translation type="unfinished"/>
+    </message>
+</context>
+<context>
+    <name>OCC::UpdateE2eeFolderUsersMetadataJob</name>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="60"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="71"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="116"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="131"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="138"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="148"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="169"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="201"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="260"/>
+        <source>Error updating metadata for a folder %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="92"/>
+        <source>Could not fetch public key for user %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="100"/>
+        <source>Could not find root encrypted folder for folder %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="121"/>
+        <source>Could not add or remove a folder user %1, for folder %2</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="238"/>
+        <source>Failed to unlock a folder.</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -5755,6 +5876,11 @@ Sunucunun verdiği hata yanıtı: %2</translation>
         <source>Search for users or groups…</source>
         <translation>Kullanıcı ya da grup ara…</translation>
     </message>
+    <message>
+        <location filename="../src/gui/filedetails/ShareeSearchField.qml" line="48"/>
+        <source>Sharing is not available for this folder</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>SyncJournalDb</name>
@@ -6002,6 +6128,16 @@ Sunucunun verdiği hata yanıtı: %2</translation>
 <context>
     <name>Utility</name>
     <message>
+        <location filename="../src/common/utility.cpp" line="147"/>
+        <source>%L1 B</source>
+        <translation>%L1 B</translation>
+    </message>
+    <message>
+        <location filename="../src/common/utility.cpp" line="116"/>
+        <source>%L1 TB</source>
+        <translation>%L1 TB</translation>
+    </message>
+    <message>
         <location filename="../src/common/utility.cpp" line="136"/>
         <source>%L1 GB</source>
         <translation>%L1 GB</translation>
@@ -6015,11 +6151,6 @@ Sunucunun verdiği hata yanıtı: %2</translation>
         <location filename="../src/common/utility.cpp" line="144"/>
         <source>%L1 KB</source>
         <translation>%L1 KB</translation>
-    </message>
-    <message>
-        <location filename="../src/common/utility.cpp" line="147"/>
-        <source>%L1 B</source>
-        <translation>%L1 B</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/common/utility.cpp" line="335"/>
@@ -6399,6 +6530,19 @@ Sunucunun verdiği hata yanıtı: %2</translation>
         <location filename="../src/gui/guiutility.cpp" line="105"/>
         <source>Free up local space</source>
         <translation>Yerelden kaldırıp yer aç</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::AbstractPropagateRemoteDeleteEncrypted</name>
+    <message>
+        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="139"/>
+        <source>Wrong HTTP code returned by server. Expected 204, but received &quot;%1 %2&quot;.</source>
+        <translation>Sunucudan alınan HTTP kodu yanlış. 204 bekleniyordu, ancak &quot;%1 %2&quot; alındı.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="183"/>
+        <source>&quot;%1 Failed to unlock encrypted folder %2&quot;.</source>
+        <translation>&quot;%1, %2 şifrelenmiş klasörünün kilidini açamadı&quot;.</translation>
     </message>
 </context>
 <context>

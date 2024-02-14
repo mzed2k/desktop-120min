@@ -542,7 +542,8 @@ void SocketApi::processEncryptRequest(const QString &localFile)
         choppedPath = choppedPath.mid(1);
     }
 
-    auto job = new OCC::EncryptFolderJob(account, folder->journalDb(), choppedPath, rec.numericFileId(), this);
+    auto job = new OCC::EncryptFolderJob(account, folder->journalDb(), choppedPath, rec.numericFileId());
+    job->setParent(this);
     connect(job, &OCC::EncryptFolderJob::finished, this, [fileData, job](const int status) {
         if (status == OCC::EncryptFolderJob::Error) {
             const int ret = QMessageBox::critical(nullptr,
@@ -1091,11 +1092,18 @@ void SocketApi::setFileLock(const QString &localFile, const SyncFileItem::LockSt
         return;
     }
 
+    const auto record = fileData.journalRecord();
+    if (static_cast<SyncFileItem::LockOwnerType>(record._lockstate._lockOwnerType) != SyncFileItem::LockOwnerType::UserLock) {
+        qCDebug(lcSocketApi) << "Only user lock state or non-locked files can be affected manually!";
+        return;
+    }
+
     shareFolder->accountState()->account()->setLockFileState(fileData.serverRelativePath,
                                                              shareFolder->remotePathTrailingSlash(),
                                                              shareFolder->path(),
                                                              shareFolder->journalDb(),
-                                                             lockState);
+                                                             lockState,
+                                                             SyncFileItem::LockOwnerType::UserLock);
 
     shareFolder->journalDb()->schedulePathForRemoteDiscovery(fileData.serverRelativePath);
     shareFolder->scheduleThisFolderSoon();

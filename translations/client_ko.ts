@@ -323,19 +323,6 @@
     </message>
 </context>
 <context>
-    <name>OCC::AbstractPropagateRemoteDeleteEncrypted</name>
-    <message>
-        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="139"/>
-        <source>Wrong HTTP code returned by server. Expected 204, but received &quot;%1 %2&quot;.</source>
-        <translation>서버에서 잘못된 HTTP 코드를 반환했습니다. 204가 받아지는 대신 &quot;%1 %2&quot;(을)를 받았습니다.</translation>
-    </message>
-    <message>
-        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="183"/>
-        <source>&quot;%1 Failed to unlock encrypted folder %2&quot;.</source>
-        <translation>%1이(가) 암호화된 폴더 %2 해제에 실패함</translation>
-    </message>
-</context>
-<context>
     <name>OCC::Account</name>
     <message>
         <location filename="../src/libsync/account.cpp" line="939"/>
@@ -363,16 +350,18 @@ Should an account import be attempted?</source>
 계정을 가져오기를 시도할까요?</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="195"/>
+        <location filename="../src/gui/accountmanager.cpp" line="198"/>
         <source>%1 accounts were detected from a legacy desktop client.
 Should the accounts be imported?</source>
-        <translation type="unfinished"/>
+        <translation>%1개 계정이 예전의 데스크톱 클라이언트에서 발견되었습니다.
+이 계정들을 가져올까요?</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="197"/>
+        <location filename="../src/gui/accountmanager.cpp" line="200"/>
         <source>1 account was detected from a legacy desktop client.
 Should the account be imported?</source>
-        <translation type="unfinished"/>
+        <translation>하나의 계정이 예전의 데스크톱 클라이언트에서 발견되었습니다.
+이 계정을 가져올까요?</translation>
     </message>
     <message>
         <location filename="../src/gui/accountmanager.cpp" line="186"/>
@@ -382,14 +371,14 @@ Should the account be imported?</source>
         <translation>예전 버전에서 가져오기</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="200"/>
+        <location filename="../src/gui/accountmanager.cpp" line="203"/>
         <source>Import</source>
-        <translation type="unfinished"/>
+        <translation>가져오기</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="201"/>
+        <location filename="../src/gui/accountmanager.cpp" line="204"/>
         <source>Skip</source>
-        <translation type="unfinished"/>
+        <translation>건너뛰기</translation>
     </message>
     <message>
         <location filename="../src/gui/accountmanager.cpp" line="255"/>
@@ -769,6 +758,11 @@ This action will abort any currently running synchronization.</source>
         <translation>%1와 %2에 연결이 없습니다.</translation>
     </message>
     <message>
+        <location filename="../src/gui/accountsettings.cpp" line="1279"/>
+        <source>Unable to connect to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location filename="../src/gui/accountsettings.cpp" line="1264"/>
         <source>Server configuration error: %1 at %2.</source>
         <translation>서버 설정 오류: %2에 있는 %1</translation>
@@ -794,7 +788,7 @@ This action will abort any currently running synchronization.</source>
         <translation>사이즈가 너무 크거나 외부 저장소이므로 동기화되지 않은 폴더가 있습니다:</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountsettings.cpp" line="1572"/>
+        <location filename="../src/gui/accountsettings.cpp" line="1573"/>
         <source>There are folders that have grown in size beyond %1MB: %2</source>
         <translation>크기가 %1MB보다 더 커진 폴더가 있습니다: %2</translation>
     </message>
@@ -991,38 +985,39 @@ This action will abort any currently running synchronization.</source>
         <translation>계속</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="455"/>
+        <location filename="../src/gui/application.cpp" line="460"/>
         <source>%1 accounts</source>
         <comment>number of accounts imported</comment>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/gui/application.cpp" line="456"/>
-        <source>1 account</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/gui/application.cpp" line="458"/>
-        <source>%1 folders</source>
-        <comment>number of folders imported</comment>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../src/gui/application.cpp" line="459"/>
-        <source>1 folder</source>
-        <translation type="unfinished"/>
+        <translation>%1개 계정</translation>
     </message>
     <message>
         <location filename="../src/gui/application.cpp" line="461"/>
-        <source>Legacy import</source>
-        <translation type="unfinished"/>
+        <source>1 account</source>
+        <translation>1개 계정</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="462"/>
+        <location filename="../src/gui/application.cpp" line="463"/>
+        <source>%1 folders</source>
+        <comment>number of folders imported</comment>
+        <translation>%1개 폴더</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/application.cpp" line="464"/>
+        <source>1 folder</source>
+        <translation>1개 폴더</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/application.cpp" line="466"/>
+        <source>Legacy import</source>
+        <translation>레거시 불러오기</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/application.cpp" line="467"/>
         <source>Imported %1 and %2 from a legacy desktop client.
 %3</source>
         <comment>number of accounts and folders imported. list of users.</comment>
-        <translation type="unfinished"/>
+        <translation>%1(과)와 %2(을)를 예전의 데스크톱 클라이언트에서 가져왔습니다.
+%3</translation>
     </message>
     <message>
         <location filename="../src/gui/application.cpp" line="394"/>
@@ -1061,6 +1056,19 @@ This action will abort any currently running synchronization.</source>
         <location filename="../src/gui/authenticationdialog.cpp" line="38"/>
         <source>&amp;Password:</source>
         <translation>암호:</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::BasePropagateRemoteDeleteEncrypted</name>
+    <message>
+        <location filename="../src/libsync/basepropagateremotedeleteencrypted.cpp" line="94"/>
+        <source>&quot;%1 Failed to unlock encrypted folder %2&quot;.</source>
+        <translation>&quot;%1(이)가 암호화된 폴더 %2의 잠금을 푸는 데 실패했습니다.&quot;</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/basepropagateremotedeleteencrypted.cpp" line="136"/>
+        <source>Wrong HTTP code returned by server. Expected 204, but received &quot;%1 %2&quot;.</source>
+        <translation>서버가 잘못된 HTTP 코드를 반환했습니다. 204가 아닌 &quot;%1 %2&quot;를 수신했습니다.</translation>
     </message>
 </context>
 <context>
@@ -1447,6 +1455,11 @@ This action will abort any currently running synchronization.</source>
         <source>Please update to the latest server and restart the client.</source>
         <translation>최신 서버로 업데이트 후 클라이언트를 다시 시작해주십시오.</translation>
     </message>
+    <message>
+        <location filename="../src/gui/connectionvalidator.cpp" line="343"/>
+        <source>Network Error</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>OCC::DiscoveryPhase</name>
@@ -1468,6 +1481,12 @@ This action will abort any currently running synchronization.</source>
         <location filename="../src/libsync/discoveryphase.cpp" line="610"/>
         <source>Server error: PROPFIND reply is not XML formatted!</source>
         <translation>서버 오류: PROPFIND 응답이 XML 형식이 아닙니다!</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/discoveryphase.cpp" line="668"/>
+        <location filename="../src/libsync/discoveryphase.cpp" line="696"/>
+        <source>Encrypted metadata setup error!</source>
+        <translation>암호화된 메타데이터 구성 오류!</translation>
     </message>
 </context>
 <context>
@@ -1630,6 +1649,39 @@ This action will abort any currently running synchronization.</source>
 This can be an issue with your OpenSSL libraries.</source>
         <translation>암호화 메타데이터를 생성할 수 없습니다. 폴더 해제 중.
 OpenSSL 라이브러리 이슈일 수 있습니다.</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::EncryptedFolderMetadataHandler</name>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="59"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="162"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="171"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="199"/>
+        <source>Error fetching metadata.</source>
+        <translation>메타데이터를 가져오는 중 오류가 발생했습니다.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="114"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="120"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="213"/>
+        <source>Error locking folder.</source>
+        <translation>폴더를 잠그는 중 오류가 발생했습니다.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="147"/>
+        <source>Error fetching encrypted folder ID.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="181"/>
+        <source>Error parsing or decrypting metadata.</source>
+        <translation>메타데이터를 분석 및 해독 중 오류가 발생했습니다.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="323"/>
+        <source>Failed to upload metadata</source>
+        <translation>메타데이터를 업로드하지 못했습니다.</translation>
     </message>
 </context>
 <context>
@@ -1883,29 +1935,29 @@ OpenSSL 라이브러리 이슈일 수 있습니다.</translation>
         <translation>다운로드하려면 설정으로 이동하여 선택하십시오.</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1366"/>
+        <location filename="../src/gui/folder.cpp" line="1369"/>
         <source>A folder has surpassed the set folder size limit of %1MB: %2.
 %3</source>
         <translation>폴더가 설정된 크기 제한인 %1MB를 초과했습니다: %2.
 %3</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1377"/>
+        <location filename="../src/gui/folder.cpp" line="1380"/>
         <source>Keep syncing</source>
         <translation>계속 동기화</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1385"/>
+        <location filename="../src/gui/folder.cpp" line="1388"/>
         <source>Stop syncing</source>
         <translation>동기화 중지</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1396"/>
+        <location filename="../src/gui/folder.cpp" line="1399"/>
         <source>The folder %1 has surpassed the set folder size limit of %2MB.</source>
         <translation>%1 폴더가 설정된 크기 제한인 %2MB를 초과했습니다.</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1397"/>
+        <location filename="../src/gui/folder.cpp" line="1400"/>
         <source>Would you like to stop syncing this folder?</source>
         <translation>이 폴더의 동기화를 중단하겠습니까?</translation>
     </message>
@@ -1933,9 +1985,9 @@ This means that the synchronization client might not upload local changes immedi
 %1</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1518"/>
+        <location filename="../src/gui/folder.cpp" line="1521"/>
         <source>Virtual file download failed with code &quot;%1&quot;, status &quot;%2&quot; and error message &quot;%3&quot;</source>
-        <translation type="unfinished"/>
+        <translation>가상 파일 다운로드에 실패했으며, 코드는 &quot;%1&quot;, 상태는 &quot;%2&quot;, 오류 메시지는 &quot;%3&quot;입니다.</translation>
     </message>
     <message>
         <location filename="../src/gui/folder.cpp" line="1411"/>
@@ -2533,7 +2585,7 @@ If this was an accident and you decide to keep your files, they will be re-synce
     <message>
         <location filename="../src/gui/generalsettings.ui" line="158"/>
         <source>Show sync folders in &amp;Explorer&apos;s navigation pane</source>
-        <translation type="unfinished"/>
+        <translation>&amp;탐색기의 탐색 패널에서 동기화 폴더 표시</translation>
     </message>
     <message>
         <location filename="../src/gui/generalsettings.ui" line="301"/>
@@ -2559,7 +2611,7 @@ If this was an accident and you decide to keep your files, they will be re-synce
     <message>
         <location filename="../src/gui/generalsettings.ui" line="218"/>
         <source>Info</source>
-        <translation type="unfinished"/>
+        <translation>정보</translation>
     </message>
     <message>
         <location filename="../src/gui/generalsettings.ui" line="229"/>
@@ -2569,12 +2621,12 @@ If this was an accident and you decide to keep your files, they will be re-synce
     <message>
         <location filename="../src/gui/generalsettings.ui" line="245"/>
         <source>Desktop client x.x.x</source>
-        <translation type="unfinished"/>
+        <translation>데스크톱 클라이언트 x.x.x</translation>
     </message>
     <message>
         <location filename="../src/gui/generalsettings.ui" line="260"/>
         <source>Update channel</source>
-        <translation type="unfinished"/>
+        <translation>업데이트 채널</translation>
     </message>
     <message>
         <location filename="../src/gui/generalsettings.ui" line="151"/>
@@ -2601,22 +2653,22 @@ If this was an accident and you decide to keep your files, they will be re-synce
     <message>
         <location filename="../src/gui/generalsettings.ui" line="323"/>
         <source>&amp;Automatically check for updates</source>
-        <translation type="unfinished"/>
+        <translation>업데이트를 &amp;자동으로 확인</translation>
     </message>
     <message>
         <location filename="../src/gui/generalsettings.ui" line="339"/>
         <source>Check Now</source>
-        <translation type="unfinished"/>
+        <translation>지금 확인하기</translation>
     </message>
     <message>
         <location filename="../src/gui/generalsettings.ui" line="363"/>
         <source>Usage Documentation</source>
-        <translation type="unfinished"/>
+        <translation>도움말</translation>
     </message>
     <message>
         <location filename="../src/gui/generalsettings.ui" line="370"/>
         <source>Legal Notice</source>
-        <translation type="unfinished"/>
+        <translation>법적 고지</translation>
     </message>
     <message>
         <location filename="../src/gui/generalsettings.ui" line="66"/>
@@ -2631,22 +2683,22 @@ If this was an accident and you decide to keep your files, they will be re-synce
     <message>
         <location filename="../src/gui/generalsettings.ui" line="420"/>
         <source>Use &amp;monochrome icons</source>
-        <translation type="unfinished"/>
+        <translation>&amp;흑백 아이콘 사용</translation>
     </message>
     <message>
         <location filename="../src/gui/generalsettings.ui" line="427"/>
         <source>&amp;Launch on system startup</source>
-        <translation type="unfinished"/>
+        <translation>&amp;시스템 시동 후 앱 자동으로 시작</translation>
     </message>
     <message>
         <location filename="../src/gui/generalsettings.ui" line="434"/>
         <source>Show server &amp;notifications</source>
-        <translation type="unfinished"/>
+        <translation>서버 &amp;알림 표시</translation>
     </message>
     <message>
         <location filename="../src/gui/generalsettings.ui" line="441"/>
         <source>Show call notifications</source>
-        <translation type="unfinished"/>
+        <translation>통화 알림 표시</translation>
     </message>
     <message>
         <location filename="../src/gui/generalsettings.cpp" line="144"/>
@@ -3070,7 +3122,7 @@ Note that using any logging command line options will override this setting.</so
     <message>
         <location filename="../src/gui/networksettings.ui" line="48"/>
         <source>No proxy</source>
-        <translation type="unfinished"/>
+        <translation>프록시 없음</translation>
     </message>
     <message>
         <location filename="../src/gui/networksettings.ui" line="49"/>
@@ -3085,7 +3137,7 @@ Note that using any logging command line options will override this setting.</so
     <message>
         <location filename="../src/gui/networksettings.ui" line="84"/>
         <source>Manually specify proxy</source>
-        <translation type="unfinished"/>
+        <translation>프록시 수동으로 지정</translation>
     </message>
     <message>
         <location filename="../src/gui/networksettings.ui" line="80"/>
@@ -3569,13 +3621,13 @@ The virtual files mode is mutually exclusive with selective sync. Currently unse
 Switching to this mode will abort any currently running synchronization.
 
 This is a new, experimental mode. If you decide to use it, please report any issues that come up.</source>
-        <translation>&quot;가상 파일&quot; 모드를 활성화 할 경우, 어떠한 파일도 우선 다운로드되지 않을 것입니다. 대신, 작은 &quot;%1&quot;파일이 서버에 존재하는 각 파일마다 생성될 것입니다. 이러한 작은 파일을 실행하거나 각 컨텍스트 메뉴를 이용하여 콘텐츠를 다운로드할 수 있습니다.
+        <translation>&quot;가상 파일&quot; 모드를 활성화 할 경우, 어떠한 파일도 우선 다운로드되지 않을 것입니다. 대신, 작은 &quot;%1&quot;파일이 서버에 존재하는 각 파일마다 생성될 것입니다. 이러한 작은 파일을 실행하거나 컨텍스트 메뉴를 이용하여 콘텐츠를 다운로드할 수 있습니다.
 
 가상 파일 모드는 선택적 동기화와 함께 사용될 수 없습니다. 선택하지 않은 폴더는 online-only 폴더로 바뀌며 선택적 동기화 설정은 초기화됩니다.
 
 이 모드로 변경할 경우 현재 진행중인 모든 동기화는 중단됩니다.
 
-본 기능은 새롭고 실험적인 모드입니다. 사용을 결정했다면, 발생하는 문제들을 보고해주십시오.</translation>
+본 기능은 새롭고 실험적인 모드입니다. 사용을 결정했다면, 발생하는 문제들을 보고해 주시기 바랍니다.</translation>
     </message>
     <message>
         <location filename="../src/gui/wizard/owncloudwizard.cpp" line="445"/>
@@ -4007,6 +4059,11 @@ This is a new, experimental mode. If you decide to use it, please report any iss
         <translation>서버에서 잘못된 HTTP 코드를 반환했습니다. 201가 받아지는 대신 &quot;1 %2&quot;을 받았습니다.</translation>
     </message>
     <message>
+        <location filename="../src/libsync/propagateremotemkdir.cpp" line="248"/>
+        <source>Failed to encrypt a folder %1</source>
+        <translation>%1 폴더를 암호화하지 못했습니다.</translation>
+    </message>
+    <message>
         <location filename="../src/libsync/propagateremotemkdir.cpp" line="260"/>
         <source>Error writing metadata to the database: %1</source>
         <translation>데이터베이스에 메타 데이터를 쓰는 동안 오류 발생: %1</translation>
@@ -4290,6 +4347,14 @@ This is a new, experimental mode. If you decide to use it, please report any iss
     </message>
 </context>
 <context>
+    <name>OCC::ShareManager</name>
+    <message>
+        <location filename="../src/gui/sharemanager.cpp" line="681"/>
+        <source>Error</source>
+        <translation>오류</translation>
+    </message>
+</context>
+<context>
     <name>OCC::ShareModel</name>
     <message>
         <location filename="../src/gui/filedetails/sharemodel.cpp" line="692"/>
@@ -4315,6 +4380,11 @@ This is a new, experimental mode. If you decide to use it, please report any iss
         <location filename="../src/gui/filedetails/sharemodel.cpp" line="704"/>
         <source>Secure file drop</source>
         <translation>안전한 파일 드롭</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/filedetails/sharemodel.cpp" line="856"/>
+        <source>Could not find local folder for %1</source>
+        <translation>%1의 로컬 폴더를 찾을 수 없습니다.</translation>
     </message>
     <message>
         <location filename="../src/gui/filedetails/sharemodel.cpp" line="993"/>
@@ -4344,7 +4414,7 @@ This is a new, experimental mode. If you decide to use it, please report any iss
         <location filename="../src/gui/filedetails/shareemodel.cpp" line="302"/>
         <source>%1 (%2)</source>
         <comment>sharee (shareWithAdditionalInfo)</comment>
-        <translation type="unfinished"/>
+        <translation>%1 (%2)</translation>
     </message>
 </context>
 <context>
@@ -4835,7 +4905,7 @@ Server replied with error: %2</source>
     <message>
         <location filename="../src/gui/tray/syncstatussummary.cpp" line="159"/>
         <source>Preparing sync</source>
-        <translation type="unfinished"/>
+        <translation>동기화 준비중</translation>
     </message>
     <message>
         <location filename="../src/gui/tray/syncstatussummary.cpp" line="155"/>
@@ -4994,6 +5064,60 @@ Server replied with error: %2</source>
     </message>
 </context>
 <context>
+    <name>OCC::UpdateE2eeFolderMetadataJob</name>
+    <message>
+        <location filename="../src/libsync/updatee2eefoldermetadatajob.cpp" line="130"/>
+        <source>Failed to update folder metadata.</source>
+        <translation>폴더의 메타데이터를 갱신하지 못했습니다.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefoldermetadatajob.cpp" line="153"/>
+        <source>Failed to unlock encrypted folder.</source>
+        <translation>폴더의 암호화를 푸는 데 실패했습니다.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefoldermetadatajob.cpp" line="163"/>
+        <source>Failed to finalize item.</source>
+        <translation>항목을 마무리하지 못했습니다.</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::UpdateE2eeFolderUsersMetadataJob</name>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="60"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="71"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="116"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="131"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="138"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="148"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="169"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="201"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="260"/>
+        <source>Error updating metadata for a folder %1</source>
+        <translation>%1 폴더의 메타데이터를 갱신하는 중 오류가 발생했습니다.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="92"/>
+        <source>Could not fetch public key for user %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="100"/>
+        <source>Could not find root encrypted folder for folder %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="121"/>
+        <source>Could not add or remove a folder user %1, for folder %2</source>
+        <translation>%1님에게 %2폴더를 제거하거나 만들 수 없습니다.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="238"/>
+        <source>Failed to unlock a folder.</source>
+        <translation>폴더의 잠금을 풀지 못했습니다.</translation>
+    </message>
+</context>
+<context>
     <name>OCC::User</name>
     <message>
         <location filename="../src/gui/tray/usermodel.cpp" line="646"/>
@@ -5140,37 +5264,37 @@ Server replied with error: %2</source>
     <message>
         <location filename="../src/gui/vfsdownloaderrordialog.ui" line="14"/>
         <source>Download error</source>
-        <translation type="unfinished"/>
+        <translation>다운로드 오류</translation>
     </message>
     <message>
         <location filename="../src/gui/vfsdownloaderrordialog.ui" line="23"/>
         <source>Error downloading</source>
-        <translation type="unfinished"/>
+        <translation>다운로드 중 오류</translation>
     </message>
     <message>
         <location filename="../src/gui/vfsdownloaderrordialog.ui" line="39"/>
         <source>could not be downloaded</source>
-        <translation type="unfinished"/>
+        <translation>다운로드할 수 없음</translation>
     </message>
     <message>
         <location filename="../src/gui/vfsdownloaderrordialog.ui" line="61"/>
         <source>&gt; More details</source>
-        <translation type="unfinished"/>
+        <translation>&gt; 더 자세히</translation>
     </message>
     <message>
         <location filename="../src/gui/vfsdownloaderrordialog.ui" line="68"/>
         <source>More details</source>
-        <translation type="unfinished"/>
+        <translation>더 자세히</translation>
     </message>
     <message>
         <location filename="../src/gui/vfsdownloaderrordialog.cpp" line="26"/>
         <source>Error downloading %1</source>
-        <translation type="unfinished"/>
+        <translation>%1(을)를 다운로드 중 오류</translation>
     </message>
     <message>
         <location filename="../src/gui/vfsdownloaderrordialog.cpp" line="27"/>
         <source>%1 could not be downloaded.</source>
-        <translation type="unfinished"/>
+        <translation>%1(은)는 다운로드할 수 없습니다.</translation>
     </message>
 </context>
 <context>
@@ -5531,7 +5655,7 @@ Server replied with error: %2</source>
         <location filename="../src/common/utility.cpp" line="482"/>
         <source>%nd</source>
         <comment>delay in days after an activity</comment>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation><numerusform>%n일</numerusform></translation>
     </message>
     <message>
         <location filename="../src/common/utility.cpp" line="486"/>
@@ -5542,7 +5666,7 @@ Server replied with error: %2</source>
         <location filename="../src/common/utility.cpp" line="491"/>
         <source>%nh</source>
         <comment>delay in hours after an activity</comment>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation><numerusform>%n시간</numerusform></translation>
     </message>
     <message>
         <location filename="../src/common/utility.cpp" line="497"/>
@@ -5559,7 +5683,7 @@ Server replied with error: %2</source>
         <location filename="../src/common/utility.cpp" line="502"/>
         <source>%nm</source>
         <comment>delay in minutes after an activity</comment>
-        <translation type="unfinished"><numerusform></numerusform></translation>
+        <translation><numerusform>%n개월</numerusform></translation>
     </message>
     <message>
         <location filename="../src/common/utility.cpp" line="506"/>
@@ -5753,6 +5877,11 @@ Server replied with error: %2</source>
         <location filename="../src/gui/filedetails/ShareeSearchField.qml" line="47"/>
         <source>Search for users or groups…</source>
         <translation>사용자나 그룹 검색...</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/filedetails/ShareeSearchField.qml" line="48"/>
+        <source>Sharing is not available for this folder</source>
+        <translation>이 폴더에서 공유를 사용할 수 없습니다.</translation>
     </message>
 </context>
 <context>
@@ -6001,6 +6130,16 @@ Server replied with error: %2</source>
 <context>
     <name>Utility</name>
     <message>
+        <location filename="../src/common/utility.cpp" line="147"/>
+        <source>%L1 B</source>
+        <translation>%L1 B</translation>
+    </message>
+    <message>
+        <location filename="../src/common/utility.cpp" line="116"/>
+        <source>%L1 TB</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location filename="../src/common/utility.cpp" line="136"/>
         <source>%L1 GB</source>
         <translation>%L1GB</translation>
@@ -6014,11 +6153,6 @@ Server replied with error: %2</source>
         <location filename="../src/common/utility.cpp" line="144"/>
         <source>%L1 KB</source>
         <translation>%L1 KB</translation>
-    </message>
-    <message>
-        <location filename="../src/common/utility.cpp" line="147"/>
-        <source>%L1 B</source>
-        <translation>%L1 B</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/common/utility.cpp" line="335"/>
@@ -6141,7 +6275,7 @@ Server replied with error: %2</source>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="631"/>
         <source>Open local or group folders</source>
-        <translation type="unfinished"/>
+        <translation>로컬 및 그룹 폴더 열기</translation>
     </message>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="641"/>
@@ -6166,7 +6300,7 @@ Server replied with error: %2</source>
     <message>
         <location filename="../src/gui/tray/Window.qml" line="894"/>
         <source>New activities</source>
-        <translation type="unfinished"/>
+        <translation>새 활동</translation>
     </message>
 </context>
 <context>
@@ -6398,6 +6532,19 @@ Server replied with error: %2</source>
         <location filename="../src/gui/guiutility.cpp" line="105"/>
         <source>Free up local space</source>
         <translation>로컬 저장공간 확보</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::AbstractPropagateRemoteDeleteEncrypted</name>
+    <message>
+        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="139"/>
+        <source>Wrong HTTP code returned by server. Expected 204, but received &quot;%1 %2&quot;.</source>
+        <translation>서버에서 잘못된 HTTP 코드를 반환했습니다. 204가 받아지는 대신 &quot;%1 %2&quot;(을)를 받았습니다.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="183"/>
+        <source>&quot;%1 Failed to unlock encrypted folder %2&quot;.</source>
+        <translation>%1이(가) 암호화된 폴더 %2 해제에 실패함</translation>
     </message>
 </context>
 <context>

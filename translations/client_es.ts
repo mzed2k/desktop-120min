@@ -323,19 +323,6 @@
     </message>
 </context>
 <context>
-    <name>OCC::AbstractPropagateRemoteDeleteEncrypted</name>
-    <message>
-        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="139"/>
-        <source>Wrong HTTP code returned by server. Expected 204, but received &quot;%1 %2&quot;.</source>
-        <translation>El código HTTP devuelto por el servidor es erróneo. Se esperaba 204, pero recibido &quot;%1 %2&quot;.</translation>
-    </message>
-    <message>
-        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="183"/>
-        <source>&quot;%1 Failed to unlock encrypted folder %2&quot;.</source>
-        <translation>&quot;%1 Falló al desbloquear la carpeta cifrada %2&quot;.</translation>
-    </message>
-</context>
-<context>
     <name>OCC::Account</name>
     <message>
         <location filename="../src/libsync/account.cpp" line="939"/>
@@ -364,14 +351,14 @@ Should an account import be attempted?</source>
 ¿Se debe intentar importar la cuenta?</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="195"/>
+        <location filename="../src/gui/accountmanager.cpp" line="198"/>
         <source>%1 accounts were detected from a legacy desktop client.
 Should the accounts be imported?</source>
         <translation>%1 cuentas se detectaron de un cliente legado de escritorio.
 ¿Deben estas cuentas ser importadas?</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="197"/>
+        <location filename="../src/gui/accountmanager.cpp" line="200"/>
         <source>1 account was detected from a legacy desktop client.
 Should the account be imported?</source>
         <translation>1 cuenta se detectó desde un cliente legado de escritorio.
@@ -385,12 +372,12 @@ Should the account be imported?</source>
         <translation>Importación antigua</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="200"/>
+        <location filename="../src/gui/accountmanager.cpp" line="203"/>
         <source>Import</source>
         <translation>Importar</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountmanager.cpp" line="201"/>
+        <location filename="../src/gui/accountmanager.cpp" line="204"/>
         <source>Skip</source>
         <translation>Saltar</translation>
     </message>
@@ -773,6 +760,11 @@ Además, esta acción interrumpirá cualquier sincronización en curso.</transla
         <translation>Sin conexión a %1 en %2.</translation>
     </message>
     <message>
+        <location filename="../src/gui/accountsettings.cpp" line="1279"/>
+        <source>Unable to connect to %1.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location filename="../src/gui/accountsettings.cpp" line="1264"/>
         <source>Server configuration error: %1 at %2.</source>
         <translation>Error de configuración del servidor: %1 en %2,</translation>
@@ -798,7 +790,7 @@ Además, esta acción interrumpirá cualquier sincronización en curso.</transla
         <translation>Hay carpetas que no se han sincronizado porque son demasiado grandes o están en el almacenamiento externo:</translation>
     </message>
     <message>
-        <location filename="../src/gui/accountsettings.cpp" line="1572"/>
+        <location filename="../src/gui/accountsettings.cpp" line="1573"/>
         <source>There are folders that have grown in size beyond %1MB: %2</source>
         <translation>Existen carpetas que han aumentado de tamaño más alla de %1MB: %2</translation>
     </message>
@@ -899,7 +891,7 @@ Además, esta acción interrumpirá cualquier sincronización en curso.</transla
     <message>
         <location filename="../src/gui/tray/activitylistmodel.cpp" line="510"/>
         <source>Fetching activities …</source>
-        <translation>Actividades de búsqueda...</translation>
+        <translation>Actividades de búsqueda …</translation>
     </message>
     <message>
         <location filename="../src/gui/tray/activitylistmodel.cpp" line="566"/>
@@ -995,34 +987,34 @@ Además, esta acción interrumpirá cualquier sincronización en curso.</transla
         <translation>Continuar</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="455"/>
+        <location filename="../src/gui/application.cpp" line="460"/>
         <source>%1 accounts</source>
         <comment>number of accounts imported</comment>
         <translation>%1 cuentas</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="456"/>
+        <location filename="../src/gui/application.cpp" line="461"/>
         <source>1 account</source>
         <translation>1 cuenta</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="458"/>
+        <location filename="../src/gui/application.cpp" line="463"/>
         <source>%1 folders</source>
         <comment>number of folders imported</comment>
         <translation>%1 carpetas</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="459"/>
+        <location filename="../src/gui/application.cpp" line="464"/>
         <source>1 folder</source>
         <translation>1 carpeta</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="461"/>
+        <location filename="../src/gui/application.cpp" line="466"/>
         <source>Legacy import</source>
         <translation>Importación legada</translation>
     </message>
     <message>
-        <location filename="../src/gui/application.cpp" line="462"/>
+        <location filename="../src/gui/application.cpp" line="467"/>
         <source>Imported %1 and %2 from a legacy desktop client.
 %3</source>
         <comment>number of accounts and folders imported. list of users.</comment>
@@ -1066,6 +1058,19 @@ Además, esta acción interrumpirá cualquier sincronización en curso.</transla
         <location filename="../src/gui/authenticationdialog.cpp" line="38"/>
         <source>&amp;Password:</source>
         <translation>&amp;Contraseña:</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::BasePropagateRemoteDeleteEncrypted</name>
+    <message>
+        <location filename="../src/libsync/basepropagateremotedeleteencrypted.cpp" line="94"/>
+        <source>&quot;%1 Failed to unlock encrypted folder %2&quot;.</source>
+        <translation>&quot;%1 Fallo al desbloquear la carpeta cifrada %2&quot;.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/basepropagateremotedeleteencrypted.cpp" line="136"/>
+        <source>Wrong HTTP code returned by server. Expected 204, but received &quot;%1 %2&quot;.</source>
+        <translation>El código HTTP devuelto por el servidor es erróneo. Se esperaba 204, pero se recibió &quot;%1 %2&quot;.</translation>
     </message>
 </context>
 <context>
@@ -1132,7 +1137,7 @@ Además, esta acción interrumpirá cualquier sincronización en curso.</transla
     <message>
         <location filename="../src/libsync/caseclashconflictsolver.cpp" line="78"/>
         <source>Cannot rename file because a file with the same name already exists on the server. Please pick another name.</source>
-        <translation>No se puede renombrar el archivo porque hay un archivo con el mismo nombre en el servidor. Por favor, elije otro nombre.</translation>
+        <translation>No se puede renombrar el archivo porque hay un archivo con el mismo nombre en el servidor. Por favor, elija otro nombre.</translation>
     </message>
     <message>
         <location filename="../src/libsync/caseclashconflictsolver.cpp" line="121"/>
@@ -1452,6 +1457,11 @@ Además, esta acción interrumpirá cualquier sincronización en curso.</transla
         <source>Please update to the latest server and restart the client.</source>
         <translation>Por favor, actualice a la última versión del servidor y reinicie el cliente.</translation>
     </message>
+    <message>
+        <location filename="../src/gui/connectionvalidator.cpp" line="343"/>
+        <source>Network Error</source>
+        <translation type="unfinished"/>
+    </message>
 </context>
 <context>
     <name>OCC::DiscoveryPhase</name>
@@ -1473,6 +1483,12 @@ Además, esta acción interrumpirá cualquier sincronización en curso.</transla
         <location filename="../src/libsync/discoveryphase.cpp" line="610"/>
         <source>Server error: PROPFIND reply is not XML formatted!</source>
         <translation>Error del servidor: ¡la respuesta de PROPFIND no tiene formato XML!</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/discoveryphase.cpp" line="668"/>
+        <location filename="../src/libsync/discoveryphase.cpp" line="696"/>
+        <source>Encrypted metadata setup error!</source>
+        <translation>¡Hubo un error al configurar los metadatos cifrados!</translation>
     </message>
 </context>
 <context>
@@ -1635,6 +1651,39 @@ Además, esta acción interrumpirá cualquier sincronización en curso.</transla
 This can be an issue with your OpenSSL libraries.</source>
         <translation>No se pueden generar los metadatos para el cifrado, desbloquea la carpeta.
 Esto podría ser un problema con tu librería OpenSSL</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::EncryptedFolderMetadataHandler</name>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="59"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="162"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="171"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="199"/>
+        <source>Error fetching metadata.</source>
+        <translation>Error al obtener los metadatos.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="114"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="120"/>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="213"/>
+        <source>Error locking folder.</source>
+        <translation>Error al bloquear la carpeta.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="147"/>
+        <source>Error fetching encrypted folder ID.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="181"/>
+        <source>Error parsing or decrypting metadata.</source>
+        <translation>Error al analizar o descifrar los metadatos.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/encryptedfoldermetadatahandler.cpp" line="323"/>
+        <source>Failed to upload metadata</source>
+        <translation>Fallo al subir los metadatos</translation>
     </message>
 </context>
 <context>
@@ -1888,29 +1937,29 @@ Esto podría ser un problema con tu librería OpenSSL</translation>
         <translation>Por favor vaya a opciones a seleccionarlo si desea descargar esto.</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1366"/>
+        <location filename="../src/gui/folder.cpp" line="1369"/>
         <source>A folder has surpassed the set folder size limit of %1MB: %2.
 %3</source>
         <translation>Una carpeta ha sobrepasado el límite establecido de tamaño de %1MB: %2.
 %3</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1377"/>
+        <location filename="../src/gui/folder.cpp" line="1380"/>
         <source>Keep syncing</source>
         <translation>Continuar sincronización</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1385"/>
+        <location filename="../src/gui/folder.cpp" line="1388"/>
         <source>Stop syncing</source>
         <translation>Detener sincronización</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1396"/>
+        <location filename="../src/gui/folder.cpp" line="1399"/>
         <source>The folder %1 has surpassed the set folder size limit of %2MB.</source>
         <translation>La carpeta %1 ha sobrepasado el límite establecido de tamaño de %2MB.</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1397"/>
+        <location filename="../src/gui/folder.cpp" line="1400"/>
         <source>Would you like to stop syncing this folder?</source>
         <translation>¿Desea detener la sincronización de esta carpeta?</translation>
     </message>
@@ -1938,7 +1987,7 @@ Esto significa que el cliente de sincronización podría no subir inmediatamente
 %1</translation>
     </message>
     <message>
-        <location filename="../src/gui/folder.cpp" line="1518"/>
+        <location filename="../src/gui/folder.cpp" line="1521"/>
         <source>Virtual file download failed with code &quot;%1&quot;, status &quot;%2&quot; and error message &quot;%3&quot;</source>
         <translation>La descarga de archivo virtual ha fallado con código &quot;%1&quot; , estado &quot;%2&quot; y mensaje de error &quot;%3&quot;</translation>
     </message>
@@ -2933,7 +2982,7 @@ Los elementos que se permite su borrado se eliminarán si impiden que un directo
     <message>
         <location filename="../src/gui/invalidfilenamedialog.cpp" line="246"/>
         <source>Cannot rename file because a file with the same name does already exist on the server. Please pick another name.</source>
-        <translation>No se puede renombrar el archivo porque hay un archivo con el mismo nombre en el servidor. Por favor, elije otro nombre.</translation>
+        <translation>No se puede renombrar el archivo porque hay un archivo con el mismo nombre en el servidor. Por favor, elija otro nombre.</translation>
     </message>
     <message>
         <location filename="../src/gui/invalidfilenamedialog.cpp" line="282"/>
@@ -4011,6 +4060,11 @@ Esta es un modo nuevo y experimental. Si decides usarlo, por favor, informa de c
         <translation>El código HTTP devuelto por el servidor es erróneo. Se esperaba 201, pero se recibió &quot;%1 %2&quot;.</translation>
     </message>
     <message>
+        <location filename="../src/libsync/propagateremotemkdir.cpp" line="248"/>
+        <source>Failed to encrypt a folder %1</source>
+        <translation>Fallo al cifrar una carpeta %1</translation>
+    </message>
+    <message>
         <location filename="../src/libsync/propagateremotemkdir.cpp" line="260"/>
         <source>Error writing metadata to the database: %1</source>
         <translation>Error al escribir los metadatos en la base de datos: %1</translation>
@@ -4294,6 +4348,14 @@ Esta es un modo nuevo y experimental. Si decides usarlo, por favor, informa de c
     </message>
 </context>
 <context>
+    <name>OCC::ShareManager</name>
+    <message>
+        <location filename="../src/gui/sharemanager.cpp" line="681"/>
+        <source>Error</source>
+        <translation>Error</translation>
+    </message>
+</context>
+<context>
     <name>OCC::ShareModel</name>
     <message>
         <location filename="../src/gui/filedetails/sharemodel.cpp" line="692"/>
@@ -4319,6 +4381,11 @@ Esta es un modo nuevo y experimental. Si decides usarlo, por favor, informa de c
         <location filename="../src/gui/filedetails/sharemodel.cpp" line="704"/>
         <source>Secure file drop</source>
         <translation>Entrega de archivos segura</translation>
+    </message>
+    <message>
+        <location filename="../src/gui/filedetails/sharemodel.cpp" line="856"/>
+        <source>Could not find local folder for %1</source>
+        <translation>No se ha podido encontrar una carpeta local para %1</translation>
     </message>
     <message>
         <location filename="../src/gui/filedetails/sharemodel.cpp" line="993"/>
@@ -4995,6 +5062,60 @@ El servidor respondió con el error: %2</translation>
         <location filename="../src/gui/tray/unifiedsearchresultslistmodel.cpp" line="479"/>
         <source>Search has failed for &apos;%1&apos;. Error: %2</source>
         <translation>La búsqueda ha fallado para &apos;%1&apos;. Error: %2</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::UpdateE2eeFolderMetadataJob</name>
+    <message>
+        <location filename="../src/libsync/updatee2eefoldermetadatajob.cpp" line="130"/>
+        <source>Failed to update folder metadata.</source>
+        <translation>Fallo al actualizar los metadatos de la carpeta.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefoldermetadatajob.cpp" line="153"/>
+        <source>Failed to unlock encrypted folder.</source>
+        <translation>Fallo al desbloquear carpeta cifrada.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefoldermetadatajob.cpp" line="163"/>
+        <source>Failed to finalize item.</source>
+        <translation>Fallo al finalizar ítem.</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::UpdateE2eeFolderUsersMetadataJob</name>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="60"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="71"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="116"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="131"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="138"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="148"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="169"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="201"/>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="260"/>
+        <source>Error updating metadata for a folder %1</source>
+        <translation>Error al actualizar los metadatos de una carpeta %1</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="92"/>
+        <source>Could not fetch public key for user %1</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="100"/>
+        <source>Could not find root encrypted folder for folder %1</source>
+        <translation>No se ha podido encontrar la carpeta cifrada para la carpeta %1</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="121"/>
+        <source>Could not add or remove a folder user %1, for folder %2</source>
+        <translation>No se ha podido añadir o eliminar al usuario de la carpeta %1, para la carpeta %2</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/updatee2eefolderusersmetadatajob.cpp" line="238"/>
+        <source>Failed to unlock a folder.</source>
+        <translation>Fallo al desbloquear una carpeta.</translation>
     </message>
 </context>
 <context>
@@ -5758,6 +5879,11 @@ El servidor respondió con el error: %2</translation>
         <source>Search for users or groups…</source>
         <translation>Buscar usuarios o grupos...</translation>
     </message>
+    <message>
+        <location filename="../src/gui/filedetails/ShareeSearchField.qml" line="48"/>
+        <source>Sharing is not available for this folder</source>
+        <translation>Compartir no está disponible para esta carpeta</translation>
+    </message>
 </context>
 <context>
     <name>SyncJournalDb</name>
@@ -6005,6 +6131,16 @@ El servidor respondió con el error: %2</translation>
 <context>
     <name>Utility</name>
     <message>
+        <location filename="../src/common/utility.cpp" line="147"/>
+        <source>%L1 B</source>
+        <translation>%L1 B</translation>
+    </message>
+    <message>
+        <location filename="../src/common/utility.cpp" line="116"/>
+        <source>%L1 TB</source>
+        <translation>%L1 TB</translation>
+    </message>
+    <message>
         <location filename="../src/common/utility.cpp" line="136"/>
         <source>%L1 GB</source>
         <translation>%L1 GB</translation>
@@ -6018,11 +6154,6 @@ El servidor respondió con el error: %2</translation>
         <location filename="../src/common/utility.cpp" line="144"/>
         <source>%L1 KB</source>
         <translation>%L1 KB</translation>
-    </message>
-    <message>
-        <location filename="../src/common/utility.cpp" line="147"/>
-        <source>%L1 B</source>
-        <translation>%L1 B</translation>
     </message>
     <message numerus="yes">
         <location filename="../src/common/utility.cpp" line="335"/>
@@ -6402,6 +6533,19 @@ El servidor respondió con el error: %2</translation>
         <location filename="../src/gui/guiutility.cpp" line="105"/>
         <source>Free up local space</source>
         <translation>Liberar espacio local</translation>
+    </message>
+</context>
+<context>
+    <name>OCC::AbstractPropagateRemoteDeleteEncrypted</name>
+    <message>
+        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="139"/>
+        <source>Wrong HTTP code returned by server. Expected 204, but received &quot;%1 %2&quot;.</source>
+        <translation>El código HTTP devuelto por el servidor es erróneo. Se esperaba 204, pero recibido &quot;%1 %2&quot;.</translation>
+    </message>
+    <message>
+        <location filename="../src/libsync/abstractpropagateremotedeleteencrypted.cpp" line="183"/>
+        <source>&quot;%1 Failed to unlock encrypted folder %2&quot;.</source>
+        <translation>&quot;%1 Falló al desbloquear la carpeta cifrada %2&quot;.</translation>
     </message>
 </context>
 <context>
